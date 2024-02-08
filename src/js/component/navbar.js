@@ -8,17 +8,17 @@ export const Navbar = () => {
 				<Link to="/">
 					<span className="navbar-brand mb-0 h1 text-warning">Star Wars Blog by Sesmodev</span>
 				</Link>
-				
-				<div>
-					<button className="navbar-toggler" data-bs-toggle="collapse">
-						Favorites
-						<span className="navbar-toggler-icon"></span>
-						<ul>
-							<li><Link>Fav 1</Link></li>
-							<li><Link>Fav 2</Link></li>
-							<li><Link>Fav 3</Link></li>
-						</ul>
-					</button>
+
+				<div className="dropdown">
+					<a className="btn btn-secondary dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+						Favoritos
+					</a>
+
+					<ul className="dropdown-menu">
+						<li><a className="dropdown-item" href="#">Un favorito chachi</a></li>
+						<li><a className="dropdown-item" href="#">Otro favorito guay</a></li>
+						<li><a className="dropdown-item" href="#">Favorito estupendo</a></li>
+					</ul>
 				</div>
 
 				<form className="d-flex" role="search">
