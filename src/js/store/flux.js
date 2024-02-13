@@ -1,14 +1,14 @@
 const getState = ({ getStore, getActions, setStore }) => {
 	return {
 		store: {
-			characters: [],
+			people: [],
 			planets: [],
 			vehicles: [],
 		},
 		actions: {
 			getAllCharacters: () => {
 				fetch(`https://www.swapi.tech/api/people/`).then(data => data.json())
-				.then(data => setStore({characters:data}))
+				.then(data => setStore({people:data}))
 			},
 			getAllPlanets: () => {
 				fetch(`https://www.swapi.tech/api/planets/`).then(data => data.json())
