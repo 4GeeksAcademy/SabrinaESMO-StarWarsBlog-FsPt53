@@ -6,16 +6,122 @@ import FotoPrueba from "../../img/aura.jpg"
 
 
 export const CharacterCard = () => (
-    <div className="row justify-content-center">
-        <div className="card mx-3 mb-5 mt-4">
-            <img src={FotoPrueba} className="card-image-top"></img>
-            <div className="card-body">
-                <p className="card-title">R2-D2</p>
-                <p className="card-text">Color de ojos: metálico. <br/> Color de pelo: metálico. <br/> Género: Androide. </p>
+    <div className="card-container">
+        <div className="row justify-content-center">
+            <div className="card mx-3 mb-5 mt-4">
+                <img src={FotoPrueba} className="card-image-top"></img>
+                <div className="card-body">
+                    <p className="card-title">R2-D2</p>
+                    <p className="card-text">Color de ojos: metálico. <br /> Color de pelo: metálico. <br /> Género: Androide. </p>
+                </div>
+                <div className="d-flex justify-content-around my-2">
+                    <button className="card-button py-1 px-3">Details</button>
+                    <button className="card-fav py-1 px-3"><i class="fa-regular fa-star"></i></button>
+                </div>
             </div>
-            <div className="d-flex justify-content-around my-2">
-                <button className="card-button py-1 px-3">Details</button>
-                <button className="card-fav py-1 px-3"><i class="fa-regular fa-star"></i></button>
+        </div>
+        <div className="row justify-content-center">
+            <div className="card mx-3 mb-5 mt-4">
+                <img src={FotoPrueba} className="card-image-top"></img>
+                <div className="card-body">
+                    <p className="card-title">R2-D2</p>
+                    <p className="card-text">Color de ojos: metálico. <br /> Color de pelo: metálico. <br /> Género: Androide. </p>
+                </div>
+                <div className="d-flex justify-content-around my-2">
+                    <button className="card-button py-1 px-3">Details</button>
+                    <button className="card-fav py-1 px-3"><i class="fa-regular fa-star"></i></button>
+                </div>
+            </div>
+        </div>
+        <div className="row justify-content-center">
+            <div className="card mx-3 mb-5 mt-4">
+                <img src={FotoPrueba} className="card-image-top"></img>
+                <div className="card-body">
+                    <p className="card-title">R2-D2</p>
+                    <p className="card-text">Color de ojos: metálico. <br /> Color de pelo: metálico. <br /> Género: Androide. </p>
+                </div>
+                <div className="d-flex justify-content-around my-2">
+                    <button className="card-button py-1 px-3">Details</button>
+                    <button className="card-fav py-1 px-3"><i class="fa-regular fa-star"></i></button>
+                </div>
+            </div>
+        </div>
+        <div className="row justify-content-center">
+            <div className="card mx-3 mb-5 mt-4">
+                <img src={FotoPrueba} className="card-image-top"></img>
+                <div className="card-body">
+                    <p className="card-title">R2-D2</p>
+                    <p className="card-text">Color de ojos: metálico. <br /> Color de pelo: metálico. <br /> Género: Androide. </p>
+                </div>
+                <div className="d-flex justify-content-around my-2">
+                    <button className="card-button py-1 px-3">Details</button>
+                    <button className="card-fav py-1 px-3"><i class="fa-regular fa-star"></i></button>
+                </div>
+            </div>
+        </div>
+        <div className="row justify-content-center">
+            <div className="card mx-3 mb-5 mt-4">
+                <img src={FotoPrueba} className="card-image-top"></img>
+                <div className="card-body">
+                    <p className="card-title">R2-D2</p>
+                    <p className="card-text">Color de ojos: metálico. <br /> Color de pelo: metálico. <br /> Género: Androide. </p>
+                </div>
+                <div className="d-flex justify-content-around my-2">
+                    <button className="card-button py-1 px-3">Details</button>
+                    <button className="card-fav py-1 px-3"><i class="fa-regular fa-star"></i></button>
+                </div>
+            </div>
+        </div>
+        <div className="row justify-content-center">
+            <div className="card mx-3 mb-5 mt-4">
+                <img src={FotoPrueba} className="card-image-top"></img>
+                <div className="card-body">
+                    <p className="card-title">R2-D2</p>
+                    <p className="card-text">Color de ojos: metálico. <br /> Color de pelo: metálico. <br /> Género: Androide. </p>
+                </div>
+                <div className="d-flex justify-content-around my-2">
+                    <button className="card-button py-1 px-3">Details</button>
+                    <button className="card-fav py-1 px-3"><i class="fa-regular fa-star"></i></button>
+                </div>
+            </div>
+        </div>
+        <div className="row justify-content-center">
+            <div className="card mx-3 mb-5 mt-4">
+                <img src={FotoPrueba} className="card-image-top"></img>
+                <div className="card-body">
+                    <p className="card-title">R2-D2</p>
+                    <p className="card-text">Color de ojos: metálico. <br /> Color de pelo: metálico. <br /> Género: Androide. </p>
+                </div>
+                <div className="d-flex justify-content-around my-2">
+                    <button className="card-button py-1 px-3">Details</button>
+                    <button className="card-fav py-1 px-3"><i class="fa-regular fa-star"></i></button>
+                </div>
+            </div>
+        </div>
+        <div className="row justify-content-center">
+            <div className="card mx-3 mb-5 mt-4">
+                <img src={FotoPrueba} className="card-image-top"></img>
+                <div className="card-body">
+                    <p className="card-title">R2-D2</p>
+                    <p className="card-text">Color de ojos: metálico. <br /> Color de pelo: metálico. <br /> Género: Androide. </p>
+                </div>
+                <div className="d-flex justify-content-around my-2">
+                    <button className="card-button py-1 px-3">Details</button>
+                    <button className="card-fav py-1 px-3"><i class="fa-regular fa-star"></i></button>
+                </div>
+            </div>
+        </div>
+        <div className="row justify-content-center">
+            <div className="card mx-3 mb-5 mt-4">
+                <img src={FotoPrueba} className="card-image-top"></img>
+                <div className="card-body">
+                    <p className="card-title">R2-D2</p>
+                    <p className="card-text">Color de ojos: metálico. <br /> Color de pelo: metálico. <br /> Género: Androide. </p>
+                </div>
+                <div className="d-flex justify-content-around my-2">
+                    <button className="card-button py-1 px-3">Details</button>
+                    <button className="card-fav py-1 px-3"><i class="fa-regular fa-star"></i></button>
+                </div>
             </div>
         </div>
     </div>

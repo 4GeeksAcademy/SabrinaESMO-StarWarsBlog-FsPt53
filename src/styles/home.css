@@ -31,3 +31,12 @@
     border-radius: 5px;
     border: 1px solid #1c983f;
 }
+
+.card-container{
+    overflow: auto;
+    display: flex;
+    scroll-snap-type: x mandatory;
+    width: 90%;
+    margin: 0 auto;
+    padding: 0 15px;
+}
