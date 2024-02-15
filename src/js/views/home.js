@@ -1,15 +1,15 @@
 import React, { useContext } from "react";
 import { Context } from "../store/appContext";
-import rigoImage from "../../img/rigo-baby.jpg";
 import "../../styles/home.css";
 import { CharacterCard } from "../component/CharacterCard";
+import { PlanetCard } from "../component/PlanetCard";
 
 export const Home = () => {
 	const { store, actions } = useContext(Context)
 console.log(store.people)
 	return (
 		<div className="text-center mt-2">
-			<h1>May the force be with you...</h1>
+			<h3>May the force be with you...</h3>
 			<div className="card-container">
 				{
 					store.people.map((character, index) => {
@@ -21,8 +21,16 @@ console.log(store.people)
 					})
 				}
 			</div>
-			<div>
-				Planets Cards
+			<div className="card-container">
+				{
+					store.planets.map((planets, index) => {
+						return (
+							<div key={index}>
+								<PlanetCard planets={planets}/>
+							</div>
+						)
+					})
+				}
 			</div>
 			<div>
 				Vehicles Cards
