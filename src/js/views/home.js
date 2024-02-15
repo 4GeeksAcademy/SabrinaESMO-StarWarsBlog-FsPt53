@@ -3,10 +3,10 @@ import { Context } from "../store/appContext";
 import "../../styles/home.css";
 import { CharacterCard } from "../component/CharacterCard";
 import { PlanetCard } from "../component/PlanetCard";
+import { VehicleCard } from "../component/VehicleCard";
 
 export const Home = () => {
 	const { store, actions } = useContext(Context)
-console.log(store.people)
 	return (
 		<div className="text-center mt-2">
 			<h3>May the force be with you...</h3>
@@ -32,8 +32,16 @@ console.log(store.people)
 					})
 				}
 			</div>
-			<div>
-				Vehicles Cards
+			<div className="card-container">
+				{
+					store.vehicles.map((vehicles, index) => {
+						return (
+							<div key={index}>
+								<VehicleCard vehicles={vehicles}/>
+							</div>
+						)
+					})
+				}
 			</div>
 		</div>
 	)

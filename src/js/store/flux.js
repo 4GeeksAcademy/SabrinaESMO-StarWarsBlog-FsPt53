@@ -6,6 +6,7 @@ const getState = ({ getStore, getActions, setStore }) => {
 			vehicles: [],
 			characterDetails: [],
 			planetDetails: [],
+			vehicleDetails: [],
 		},
 		actions: {
 			getAllCharacters: () => {
@@ -50,6 +51,21 @@ const getState = ({ getStore, getActions, setStore }) => {
 						return planets
 					})
 					setStore({planets:newPlanets})
+				})
+			},
+
+			addDetailToVehicles: (uid) => {
+				fetch(`https://www.swapi.tech/api/vehicles/${uid}`)
+				.then(data => data.json())
+				.then((data) => {
+					let newVehicles = getStore().vehicles.map(vehicles => {
+						if (vehicles.uid === uid){
+							return Object.assign(vehicles, data.result)
+						}
+						else
+						return vehicles
+					})
+					setStore({vehicles:newVehicles})
 				})
 			},
 
