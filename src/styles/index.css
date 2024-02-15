@@ -6,3 +6,8 @@ h1 {
     color: white;
     text-shadow: 5px 5px 10px #fdec50;
 }
+
+img{
+    width: 100%;
+    object-fit: contain;
+}

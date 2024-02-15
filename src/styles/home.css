@@ -1,5 +1,4 @@
 .card {
-    object-fit: contain;
     width: 300px;
     border-radius: 10px;
     background: #02011e;
@@ -8,11 +7,6 @@
     margin-right: 10px;
     border: 2px solid #174aef;
     box-shadow: #cc1f1f 0px 0px 25px;
-}
-
-.card-img-top {
-    object-fit: contain;
-    max-height: 200px;
 }
    
 .card-body {
