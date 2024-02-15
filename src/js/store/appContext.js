@@ -22,8 +22,9 @@ const injectContext = PassedComponent => {
 		);
 
 		useEffect(() => {
-			const {actions} = state;
-			actions.getAllCharacters();
+			state.actions.getAllCharacters();
+			state.actions.getAllPlanets();
+			state.actions.getAllVehicles();
 		}, []);
 
 		// The initial value for the context is not null anymore, but the current state of this component,
