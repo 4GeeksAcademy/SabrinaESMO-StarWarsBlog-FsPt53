@@ -9,7 +9,7 @@ export const Home = () => {
 	const { store, actions } = useContext(Context)
 	return (
 		<div className="text-center mt-2">
-			<h3>May the force be with you...</h3>
+			<h1>MAY THE FORCE BE WITH YOU...</h1>
 			<div className="card-container">
 				{
 					store.people.map((character, index) => {
