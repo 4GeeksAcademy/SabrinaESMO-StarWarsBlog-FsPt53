@@ -1,8 +1,10 @@
 import React, { useContext, useEffect } from "react";
 import { Context } from "../store/appContext";
-
+import { Link } from "react-router-dom";
 
 export const CharacterCard = (props) => {
+    console.log("Props received:", props);
+
 
     const { store, actions } = useContext(Context)
 
@@ -25,7 +27,7 @@ export const CharacterCard = (props) => {
                         </p>
                     </div>
                     <div className="d-flex justify-content-around my-2">
-                        <button className="card-button py-1 px-3">Details</button>
+                        <Link to={`/character/${props.character?.uid}`} className="card-button py-1 px-3">Details</Link>
                         <button className="card-fav py-1 px-3"><i className="fa-regular fa-star"></i></button>
                     </div>
                 </div>
