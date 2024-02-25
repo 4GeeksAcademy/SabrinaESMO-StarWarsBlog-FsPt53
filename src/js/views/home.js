@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import React, { useContext, useEffect } from "react";
 import { Context } from "../store/appContext";
 import "../../styles/home.css";
 import { CharacterCard } from "../component/CharacterCard";
@@ -6,7 +6,14 @@ import { PlanetCard } from "../component/PlanetCard";
 import { VehicleCard } from "../component/VehicleCard";
 
 export const Home = () => {
-	const { store, actions } = useContext(Context)
+	const { store, actions } = useContext(Context);
+
+	useEffect(() => {
+		actions.getAllCharacters();
+		actions.getAllPlanets();
+		actions.getAllVehicles();
+	}, []);
+
 	return (
 		<div className="text-center mt-2">
 			<h1>MAY THE FORCE BE WITH YOU...</h1>
@@ -21,7 +28,7 @@ export const Home = () => {
 					})
 				}
 			</div>
-			<div className="card-container">
+			{/* <div className="card-container">
 				{
 					store.planets.map((planets, index) => {
 						return (
@@ -31,8 +38,8 @@ export const Home = () => {
 						)
 					})
 				}
-			</div>
-			<div className="card-container">
+			</div> */}
+			{/* <div className="card-container">
 				{
 					store.vehicles.map((vehicles, index) => {
 						return (
@@ -42,7 +49,7 @@ export const Home = () => {
 						)
 					})
 				}
-			</div>
+			</div> */}
 		</div>
 	)
 };

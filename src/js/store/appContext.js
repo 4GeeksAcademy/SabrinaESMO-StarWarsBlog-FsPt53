@@ -21,20 +21,13 @@ const injectContext = PassedComponent => {
 			})
 		);
 
-		useEffect(() => {
-			state.actions.getAllCharacters();
-			state.actions.getAllPlanets();
-			state.actions.getAllVehicles();
-			state.actions.addDetailToCharacters();
-			state.actions.addDetailToPlanets();
-			state.actions.addDetailToVehicles();
-		}, []);
+		useEffect(() => {}, []);
 
 		// The initial value for the context is not null anymore, but the current state of this component,
 		// the context will now have a getStore, getActions and setStore functions available, because they were declared
 		// on the state of this component
 		return (
-			<Context.Provider value={state}>
+			<Context.Provider value={{store: state.store, actions: state.actions}}>
 				<PassedComponent {...props} />
 			</Context.Provider>
 		);

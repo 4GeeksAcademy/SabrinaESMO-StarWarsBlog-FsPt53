@@ -1,26 +1,19 @@
-import React, { useContext, useEffect } from "react";
-import { Context } from "../store/appContext";
+import React from "react";
+import { Link } from "react-router-dom";
 
 
-export const PlanetCard = (props) => {
-
-    const { store, actions } = useContext(Context)
-
-    useEffect(() => {
-        actions.addDetailToPlanets(props.planets?.uid)
-    }, []
-    )
+export const PlanetCard = ({planets}) => {
 
     return (
         <div>
             <div className="row justify-content-center mx-1">
                 <div className="card mx-3 mb-5 mt-4">
-                    <img src={`https://starwars-visualguide.com/assets/img/planets/${props.planets?.uid}.jpg`} className="card-image-top"></img>
+                    <img src={`https://starwars-visualguide.com/assets/img/planets/${planets?.uid}.jpg`} className="card-image-top"></img>
                     <div className="card-body">
-                        <p className="card-title">{props.planets?.name}</p>
+                        <p className="card-title">{planets.properties.name}</p>
                         <p className="card-text">
-                            Population: {props.planets?.properties?.population} <br />
-                            Terrain: {props.planets?.properties?.terrain} <br />
+                            Population: {planets.properties.population} <br />
+                            Terrain: {planets.properties.terrain} <br />
                         </p>
                     </div>
                     <div className="d-flex justify-content-around my-2">
