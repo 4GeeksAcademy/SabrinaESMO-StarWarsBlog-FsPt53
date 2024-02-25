@@ -28,7 +28,7 @@ export const Home = () => {
 					})
 				}
 			</div>
-			{/* <div className="card-container">
+			<div className="card-container">
 				{
 					store.planets.map((planets, index) => {
 						return (
@@ -38,7 +38,7 @@ export const Home = () => {
 						)
 					})
 				}
-			</div> */}
+			</div>
 			{/* <div className="card-container">
 				{
 					store.vehicles.map((vehicles, index) => {
