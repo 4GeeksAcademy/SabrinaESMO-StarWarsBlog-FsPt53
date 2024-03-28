@@ -32,7 +32,6 @@ export const CharacterDetails = () => {
                             <>
                                 <p className="card-title">{store.characterDetails.properties.name}</p>
                                 <p className="card-text">Hair Color: {store.characterDetails.properties.hair_color}</p>
-                                {/* Agrega más propiedades del personaje aquí */}
                             </>
                         ) : (
                             <p>Parece que el personaje es tímido y no quiere mostrar sus detalles...</p>

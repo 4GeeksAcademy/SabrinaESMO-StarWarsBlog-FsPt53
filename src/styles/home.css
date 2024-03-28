@@ -5,8 +5,7 @@
     position: relative;
     padding: 5px;
     margin-right: 10px;
-    border: 2px solid #174aef;
-    box-shadow: #cc1f1f 0px 0px 25px;
+    box-shadow: #ababab 0px 0px 15px;
 }
    
 .card-body {
@@ -24,13 +23,11 @@
 .card-button{
     background-color:#e5b738;
     border-radius: 5px;
-    border: 1px solid #e5b738;
 }
 
 .card-fav{
     background-color: #1c983f;
     border-radius: 5px;
-    border: 1px solid #1c983f;
 }
 
 .card-container{
